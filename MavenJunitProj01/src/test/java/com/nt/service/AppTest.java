@@ -36,8 +36,8 @@ public class AppTest
     public void testSumWithPositives() 
     {
     	System.out.println("AppTest.testSumWithPositives()");
-    	int a=500,b=800;
-    	int expected=1300;
+    	int a=600,b=800;
+    	int expected=1400;
     	int actual=ar.sum(a, b);
         assertEquals(expected,actual);
     }
