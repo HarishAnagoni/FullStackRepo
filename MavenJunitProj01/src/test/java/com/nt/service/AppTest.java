@@ -96,7 +96,6 @@ public class AppTest
         assertEquals(expected,actual);
     }
     @Test
-    @Disabled
     public void testSubWithZeros() 
     {
     	System.out.println("AppTest.testSubWithZeros()");
