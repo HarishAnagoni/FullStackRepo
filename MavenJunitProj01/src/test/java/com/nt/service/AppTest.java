@@ -5,7 +5,6 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 public class AppTest 
 {	
@@ -47,7 +46,7 @@ public class AppTest
     	System.out.println("AppTest.testSubWithPositives()");
     	int a=100,b=200;
     	int expected=-100;
-    	int actual=ar.sub(a, b);
+    	int actual=ar.substraction(a, b);
         assertEquals(expected,actual);
     }
     @Test
@@ -65,7 +64,7 @@ public class AppTest
     	System.out.println("AppTest.testSubWithNegatives()");
     	int a=-100,b=-200;
     	int expected=100;
-    	int actual=ar.sub(a, b);
+    	int actual=ar.substraction(a, b);
         assertEquals(expected,actual);
     }
     @Test
@@ -83,7 +82,7 @@ public class AppTest
     	System.out.println("AppTest.testSubWithMixed()");
     	int a=100,b=-200;
     	int expected=300;
-    	int actual=ar.sub(a, b);
+    	int actual=ar.substraction(a, b);
         assertEquals(expected,actual);
     } 
     @Test
@@ -96,13 +95,12 @@ public class AppTest
         assertEquals(expected,actual);
     }
     @Test
-    @Disabled
     public void testSubWithZeros() 
     {
     	System.out.println("AppTest.testSubWithZeros()");
     	int a=0,b=0;
     	int expected=0;
-    	int actual=ar.sub(a, b);
+    	int actual=ar.substraction(a, b);
         assertEquals(expected,actual);
     }
 }
